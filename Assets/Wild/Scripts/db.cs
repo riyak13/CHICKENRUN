@@ -16,9 +16,14 @@ public class db : MonoBehaviour {
 		dbconn = (IDbConnection) new SqliteConnection(conn);
 		dbconn.Open(); //Open connection to the database.
 		IDbCommand dbcmd = dbconn.CreateCommand();
-		string sqlQuery = "SELECT Id,Username,Score FROM UserInfo";
+		string sqlQuery = "SELECT *FROM UserInfo";
+		//Id,Username,Score 
 		dbcmd.CommandText = sqlQuery;
-		IDataReader reader = dbcmd.ExecuteReader();
+
+		IDataReader reader = dbcmd.ExecuteReader(); 
+
+		//executes commands to reader
+
 		while (reader.Read())
 		{
 			int Id = reader.GetInt32(0);
@@ -27,12 +32,36 @@ public class db : MonoBehaviour {
 
 			Debug.Log( "Id= "+Id+"  name ="+Username+" Score= "+Score);
 		}
+
+		//shows data on console
 		reader.Close();
 		reader = null;
 		dbcmd.Dispose();
 		dbcmd = null;
 		dbconn.Close();
 		dbconn = null;
+
+		//closing the reader
+	}
+
+	private void InsertScore (string name, int NewScore) {
+		string conn = "URI=file:Users.db"; 
+		IDbConnection dbconn;
+		dbconn = (IDbConnection) new SqliteConnection(conn);
+		dbconn.Open(); 
+
+		//Open connection to the database.
+
+		IDbCommand dbcmd = dbconn.CreateCommand();
+		string sqlQuery = String.Format (
+			"INSERT INTO UserInfo (Id,Username,Score) VALUES (\"{1}\",\"{2}\")",name,NewScore); 
+		dbcmd.CommandText = sqlQuery;
+		dbcmd.ExecuteScalar ();
+		dbconn.Close ();
+
+		//shows data on console
+	
+
 	}
 
 			
