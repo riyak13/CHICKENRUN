@@ -59,6 +59,7 @@
      <Compile Include="Assets\Scripts\Colliders.cs" />
      <Compile Include="Assets\Scripts\db.cs" />
      <Compile Include="Assets\Scripts\GameControl.cs" />
+     <Compile Include="Assets\Scripts\HighScore.cs" />
      <Compile Include="Assets\Scripts\RepeatBackground.cs" />
      <Compile Include="Assets\Scripts\ScrollBackground.cs" />
      <Compile Include="Assets\Scripts\Sound.cs" />
