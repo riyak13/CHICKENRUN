@@ -60,10 +60,25 @@ public class db : MonoBehaviour {
 		dbconn.Close ();
 
 		//shows data on console
-	
 
 	}
+
+	private void DeleteScore ( int Id) {
+		string conn = "URI=file:Users.db"; 
+		IDbConnection dbconn;
+		dbconn = (IDbConnection) new SqliteConnection(conn);
+		dbconn.Open(); 
+
+		//Open connection to the database.
+
+		IDbCommand dbcmd = dbconn.CreateCommand();
+		string sqlQuery = String.Format 
+			("DELETE FROM UserInfo WHERE Id = \"{0}\"", Id); 
+		dbcmd.CommandText = sqlQuery;
+		dbcmd.ExecuteScalar ();
+		dbconn.Close ();
 
 			
 	}
+}
 	

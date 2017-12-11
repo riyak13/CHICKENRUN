@@ -54,14 +54,15 @@
      <Compile Include="Assets\MainMenu\Scripts\LevelMenu.cs" />
      <Compile Include="Assets\MainMenu\Scripts\MainMenu.cs" />
      <Compile Include="Assets\MainMenu\Scripts\PauseMenu.cs" />
-     <Compile Include="Assets\Wild\Scripts\Chick.cs" />
-     <Compile Include="Assets\Wild\Scripts\ColliderPool.cs" />
-     <Compile Include="Assets\Wild\Scripts\Colliders.cs" />
-     <Compile Include="Assets\Wild\Scripts\db.cs" />
-     <Compile Include="Assets\Wild\Scripts\GameControl.cs" />
-     <Compile Include="Assets\Wild\Scripts\RepeatBackground.cs" />
-     <Compile Include="Assets\Wild\Scripts\ScrollBackground.cs" />
-     <Compile Include="Assets\Wild\Scripts\SoundManager.cs" />
+     <Compile Include="Assets\Scripts\Chick.cs" />
+     <Compile Include="Assets\Scripts\ColliderPool.cs" />
+     <Compile Include="Assets\Scripts\Colliders.cs" />
+     <Compile Include="Assets\Scripts\db.cs" />
+     <Compile Include="Assets\Scripts\GameControl.cs" />
+     <Compile Include="Assets\Scripts\RepeatBackground.cs" />
+     <Compile Include="Assets\Scripts\ScrollBackground.cs" />
+     <Compile Include="Assets\Scripts\Sound.cs" />
+     <Compile Include="Assets\Scripts\SoundManager.cs" />
  <Reference Include="Facebook.Unity.Settings">
  <HintPath>C:/Users/kayna/CHICKENRUN/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
