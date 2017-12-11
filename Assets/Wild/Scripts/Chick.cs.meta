@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: ec70abac5dafdf44e934a95f285956dd
+timeCreated: 1512777732
+licenseType: Free
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - GetPowerupSound1: {fileID: 8300000, guid: f9c6b3fd2dbfcf64482df155d82ab16f, type: 3}
+  - GetPowerupSound2: {fileID: 8300000, guid: 139cd66081e3f484593fc16df88ff100, type: 3}
+  - GameOverSound: {fileID: 8300000, guid: aeeee6d535a195045a5922f97ba630af, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
