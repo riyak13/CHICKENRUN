@@ -272,7 +272,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 172625945}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.000030517578, y: 3.850769, z: 0}
+  m_LocalPosition: {x: 0.000030517578, y: 3.6199799, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 922034948}
@@ -528,7 +528,7 @@ Prefab:
     - target: {fileID: 224115231303138350, guid: e72625428e715df4b899d6d59cc5aa50,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 89.2
+      value: 200.37
       objectReference: {fileID: 0}
     - target: {fileID: 224115231303138350, guid: e72625428e715df4b899d6d59cc5aa50,
         type: 2}
@@ -981,6 +981,54 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 771584043}
   m_GameObject: {fileID: 1260694544}
+--- !u!1 &1340419664
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1340419666}
+  - component: {fileID: 1340419665}
+  m_Layer: 5
+  m_Name: HighScoreManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1340419665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1340419664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b5cdc815913dac4597fe28506df87d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scorePrefab: {fileID: 1113350027293104, guid: e72625428e715df4b899d6d59cc5aa50,
+    type: 2}
+  scoreParent: {fileID: 796289741}
+--- !u!224 &1340419666
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1340419664}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 400.00003, y: 228.61998, z: 0}
+  m_LocalScale: {x: 0.42000002, y: 0.42000002, z: 0.42000002}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 400.00003, y: 228.61998}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1345401153
 GameObject:
   m_ObjectHideFlags: 0
@@ -1104,8 +1152,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1711054258}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 162.5, y: 91.5, z: 0}
-  m_LocalScale: {x: 0.40625, y: 0.40625, z: 0.40625}
+  m_LocalPosition: {x: 168, y: 94.5, z: 0}
+  m_LocalScale: {x: 0.42000002, y: 0.42000002, z: 0.42000002}
   m_Children:
   - {fileID: 172625946}
   m_Father: {fileID: 0}

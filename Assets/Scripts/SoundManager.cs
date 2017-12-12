@@ -1,15 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Audio;
 
 public class SoundManager : MonoBehaviour 
 {
-	public AudioSource efxSource;
+	public AudioSource JumpSource;
+	public AudioSource GameOverSource;
+	public AudioSource MusicSource;
 	public static SoundManager instance = null;
 
-	public float lowPitchRange = .95f; //-5% of original pitch
-	public float highPitchRange = 1.05f; //+5% of original pitch
 
 
 	void Awake () 
@@ -18,27 +17,10 @@ public class SoundManager : MonoBehaviour
 			instance = this;
 		else if (instance != this)
 			Destroy (gameObject);
-		DontDestroyOnLoad (gameObject);
+		DontDestroyOnLoad (gameObject);  //do not destroy during game play
 		
 	}
 
-
-	public void PlaySingle(AudioClip clip) // to be called by Chick class to play gameover sound effect 
-	{
-		efxSource.clip = clip;
-		efxSource.Play ();
-	}
-
-	public void RamdomizeSfx (params AudioClip[] clips) // creating random variation of clips at random pitches, so the sound won't be too boring
-	{
-		int randomIndex = Random.Range (0, clips.Length);
-		float randomPitch = Random.Range (lowPitchRange, highPitchRange);
-
-		efxSource.pitch = randomPitch;
-		efxSource.clip = clips[randomIndex];
-		efxSource.Play ();
-
-	}
 
 
 

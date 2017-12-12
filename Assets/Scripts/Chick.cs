@@ -51,6 +51,7 @@ public class Chick : MonoBehaviour
 		if (coll.gameObject.name == "Berry" || coll.gameObject.name == "Water"|| coll.gameObject.name == "grain" || coll.gameObject.name == "cherry") {    // hit powerups to score
 			GameControl.instance.RepositionCollider (coll.gameObject);
 			GameControl.instance.ChickScored ();
+			SoundManager.instance.JumpSource.Play (); 
 		//SoundManager.instance.RamdomizeSfx(GetPowerupSound1, GetPowerupSound2);  // to play random sound effects during game play
 		   
 		} else if (coll.gameObject.name == "Stone" || coll.gameObject.name == "Eagle") //hit obstacles, damage health
@@ -58,8 +59,9 @@ public class Chick : MonoBehaviour
 			animator.SetTrigger ("die");
 			GameControl.instance.ChickDead ();  // to be updated!!
 			chickDead = true;
+			SoundManager.instance.GameOverSource.Play (); 
 			//SoundManager.instance.PlaySingle (GameOverSound); // // to play gameover sound effects when game over
-			SoundManager.instance.efxSource.Stop(); //stop background music when game over
+			SoundManager.instance.MusicSource.Stop(); //stop background music when game over
 		}
 	}
 

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace AssemblyCSharp
+namespace Highscore
 {
 	public class HighScore
 	{
@@ -11,7 +11,7 @@ namespace AssemblyCSharp
 		public string Username {get; set;}
 		public int Score { get; set; }
 
-		public HighScore (int Id, int Score, int Username)
+		public HighScore (int Id, string Username, int Score)
 		{
 			this.Score = Score;
 			this.Username = Username;

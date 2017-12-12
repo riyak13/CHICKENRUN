@@ -37,7 +37,7 @@ public class GameControl : MonoBehaviour
 		if (GameOver == true && Input.GetMouseButtonDown (0))  
 		{
 			SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex);
-			SoundManager.instance.efxSource.Play ();
+			SoundManager.instance.MusicSource.Play ();
 		} 
 
 
